@@ -33,6 +33,3 @@ def language_counter():
                                         
     return Response(json.dumps(all_data))
     
-    if response2.status_code == 200:      
-          print("response")
-
