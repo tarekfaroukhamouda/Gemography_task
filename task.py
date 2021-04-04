@@ -9,13 +9,11 @@ def language_counter():
     import httplib2
     import urllib
     import json
-    all_language=[]
     all_users={}
     languages={}
     all_data=[]
-    list_of_users=[]
-    response2 = requests.get("https://api.github.com/search/repositories?q=created:>2020-03-01&sort=stars&order=desc")
-    for item in response2.json()['items']:
+    response_from_github = requests.get("https://api.github.com/search/repositories?q=created:>2020-03-01&sort=stars&order=desc")
+    for item in response_from_github.json()['items']:
 
               
 
